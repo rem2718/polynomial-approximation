@@ -4,8 +4,8 @@ function plot_two_functions(f1, f2, x, name)
     y1 = zeros(1,n);
     y2 = zeros(1,n);
     for i=1:n
-        y1(i) = f1(x);
-        y2(i) = f2(x);
+        y1(i) = f1(x(i));
+        y2(i) = f2(x(i));
     end
 
     plot(x, y1, 'b-', 'LineWidth', 2);
